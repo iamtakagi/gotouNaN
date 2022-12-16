@@ -63,9 +63,9 @@ const kanjiToHira = async (text) => {
     })
     console.log(response)
     let result = (await response.json())["converted"]
-    console.log(result)
     // スペースを削除
-    result = result.replace(/\s+/g, "");
+    result = result.trim().replace(/\s+/g, "");
+    console.log(result)
     return result
 }
 window.addEventListener("DOMContentLoaded", () => {
