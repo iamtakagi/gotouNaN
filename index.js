@@ -44,7 +44,7 @@ const numbersToKanji = (num) => {
     return ret;
 };
 // ref: https://labs.goo.ne.jp/api/jp/hiragana-translation/
-const hiraToKanji = async (text) => {
+const kanjiToHira = async (text) => {
     const base = 'https://labs.goo.ne.jp'
     const path = '/api/hiragana';
     const url = new URL(path, base);
