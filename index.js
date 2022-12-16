@@ -70,7 +70,7 @@ const kanjiToHira = async (text) => {
 }
 window.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#generate_gotou_btn").onclick = async () => {
-        document.querySelector("#result").innerText = "後藤" + await kanjiToHira(numbersToKanji(Math.floor(Math.random() * 11)) + "人") + "ちゃん"
+        document.querySelector("#result").innerText = "後藤" + await kanjiToHira(numbersToKanji(Math.floor(Math.random() * 13)) + "人") + "ちゃん"
     }
     document.querySelector("#twitter_share_btn").onclick = () => {
         const result = document.querySelector("#result").innerText;
