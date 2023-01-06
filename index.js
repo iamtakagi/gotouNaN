@@ -51,7 +51,6 @@ const kanjiToHira = async (text) => {
     console.log(url.toString())
     const response = await fetch(url, {
         method: "POST",
-        url,
         body: JSON.stringify({
             app_id: "a489e8dec826dbedda4939b1d4f1031a6cf967fd264f5e95191b632d82a3cf47",
             sentence: text,
